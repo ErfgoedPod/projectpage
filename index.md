@@ -1,6 +1,11 @@
 <style>
 body {
-    background-image: url("./nde.jpg");
+    /* background-image: url("./nde.jpg");*/
+    background-color: #FFFFFF;
+    color: #000000;
+    background-size: contain;
+    background-repeat:none;
+    font-family: Roboto, Helvetica, Arial, sans-serif
 }
 </style>
 
@@ -18,37 +23,38 @@ The principles of Decentralized Web and Solid resonate strongly with NDE-Usableâ
 
 The main project outcomes are protocols and components for creating generic decentralized exchange networks for various types of metadata pertaining artefacts, which is joint work with the ResearcherPod project. Additionally, ErfgoedPod provides a small background study, an architectural design and a descriptions of relevant use cases to apply these generic protocols and components in the digital heritage domain. This document captures the use cases that originate from the Team Infrastucture and the high-level design of a decentralized network for digital heritage artefacts. To that end, it identifies a list of representative roles and services in the Dutch Digital Heritage Network and the business processes that they should be able to execute. These business processes then serve as a basis for a proof-of-concept implementation of such network, as further outlined in the architecture specification.
 
-
-## Concept
-
-
-## Relationship to ResearcherPod
-
-
 ## Deliverables
 
 ### Documents
 
+The following specifications and documents resulted from the ErfgoedPod project:
+
 | Deliverable | Description | 
 | ------- | ----------|
 | [Use cases](https://erfgoedpod.github.io/usecases/) | Inventory of all digital heritage use cases developed in the project.   |
-| [Infrastructure](https://erfgoedpod.github.io/common-setups/) |  |
-| [Event Notifications](https://www.eventnotifications.net/) |  |
-| [Architecture](https://erfgoedpod.github.io/architecture/) |  |
-| [Terminology and specification overview](https://mellonscholarlycommunication.github.io/spec-overview/) |  |
+| [Infrastructure](https://erfgoedpod.github.io/common-setups/) | An study on common digital infrastruture setups in the cultural heritage domain.  |
+| [Event Notifications](https://www.eventnotifications.net/) | A specification thet details a profile for using Linked Data Notifications [LDN] with ActivityStreams2 [AS2] payloads in decentralized value-adding networks. |
+| [Architecture](https://erfgoedpod.github.io/architecture/) | Details on the technical implementation of the use cases. |
+| [Terminology and specification overview](https://mellonscholarlycommunication.github.io/spec-overview/) | The overview of all documents and terminology that were conceived in the ResearchPod project and used by the ErfgoedPod project.  |
 
 ### Software
 
+The following software libraries and projects resulted from the ErfgoedPod project:
+
 | Deliverable | Description | 
 | ------- | ----------|
-| [evno](https://github.com/ErfgoedPod/evno) |  |
-| [bashlib](https://github.com/SolidLabResearch/Bashlib) |  |
-| [prototype](https://github.com/ErfgoedPod/prototype) |  |
+| [evno](https://github.com/ErfgoedPod/evno) | A CLI and Typescript library for using and implementing the [Event Notifications](https://www.eventnotifications.net/) specification in applications. |
+| [bashlib](https://github.com/SolidLabResearch/Bashlib) | A CLI and Typescript library for interacting with Solid Pods. |
+| [prototype](https://github.com/ErfgoedPod/prototype) | A prototype of a decentralized digital heritage network using Solid Pods for data storage and Event Notifications for communcation. It is build with Docker Compose, the Community Solid Server and [evno](https://github.com/ErfgoedPod/evno), and runs a small frontend. |
 
 ## Dissemination
 
-- June 3, 2021 - Seminar Digital CH (NL/VL) - STLab
-- June 11, 2022 - Bootcamp open culturele data
-- June 6, 2022 - Solid Amsterdam Meetup
-- 
+The ErfgoedPod project was presented at the following events:
+
+| Date | Event | Title | |
+| ------- | ----------|----------|----------|
+| June 3, 2021 | Seminar Digital CH (NL/VL) - STLab | Digital heritage as social network  |[slides](./files/ErfgoedPod%20-%20STLAB.pdf)|
+| June 11, 2022 | Bootcamp open culturele data | Decentralized Digital heritage network | [slides](./files/20210611_3_4_ErfgoedPod_Miel_Vander_Sande.pdf) |
+| June 6, 2022 | Solid Amsterdam Meetup | Solid as foundation for Digital Heritage Networks | [slides](./files/20221006%20Solid%20Amsterdam%20.pdf) |
+| June 14, 2023 | Symposium 'Het Decentrale Web en Solid: scenarioâ€™s voor de toekomst' | Use Cases of Event Notifications in digital heritage networks |[slides](./files/20230614%20PLDN%20Solid%20Use%20Cases%20.pdf)|
 
